@@ -10,4 +10,8 @@ public class TwoDShape {
         return area;
     }
     public void setHeight(double height){}
+
+    public static void main(String[] args) {
+
+    }
 }
