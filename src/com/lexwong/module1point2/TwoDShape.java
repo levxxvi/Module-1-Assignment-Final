@@ -1,4 +1,4 @@
-package com.lexwong.module1point1;
+package com.lexwong.module1point2;
 
 public class TwoDShape {
     double width;
