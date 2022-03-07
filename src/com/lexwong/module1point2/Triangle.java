@@ -8,7 +8,6 @@ public class Triangle extends TwoDShape {
     public Triangle(double width, double height) {
         this.width = width;
         this.height = height;
-        getArea(width, height);
     }
     public Triangle(double side1, double side2,double side3){}
 
@@ -18,9 +17,11 @@ public class Triangle extends TwoDShape {
         return h;
     }
 
-    public double getArea(double width, double height){
-        double area = (width*height)/2;
+    public double getArea(){
+        double num = width * height;
+        double area = num / 2;
         return area;
+
     }
 
     /*public double getArea(double side1, double side2, double side3){
@@ -35,7 +36,7 @@ public class Triangle extends TwoDShape {
         return "Triangle has: " +
                 "base = " + width +
                 ", and height = " + height +
-                ". The area of the triangle is: " + getArea();
+                ". The area of the triangle is: " + this.getArea();
     }
 
     /*@Override

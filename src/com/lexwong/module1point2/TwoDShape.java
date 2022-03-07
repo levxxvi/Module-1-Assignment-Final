@@ -13,14 +13,7 @@ public class TwoDShape {
     }
     public void setHeight(double height){}
 
-    public static void main(String[] args) {
-        ArrayList<String> shapes = new ArrayList<String>();
-        shapes.add(String.valueOf(new Triangle(Math.random()*50,Math.random()*50)));
-        shapes.add(String.valueOf(new Circle(Math.random()*50)));
-        System.out.println(shapes);
 
-
-    }
 
     //original
     /*public static void main(String[] args) {
