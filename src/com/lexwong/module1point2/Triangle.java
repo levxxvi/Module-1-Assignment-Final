@@ -6,7 +6,9 @@ public class Triangle extends TwoDShape {
     //base is side 3
     double side3;
     public Triangle(double width, double height) {
-        super(width, height);
+        this.width = width;
+        this.height = height;
+        getArea(width, height);
     }
     public Triangle(double side1, double side2,double side3){}
 
@@ -16,19 +18,32 @@ public class Triangle extends TwoDShape {
         return h;
     }
 
-    public double getArea(){
+    public double getArea(double width, double height){
+        double area = (width*height)/2;
+        return area;
+    }
+
+    /*public double getArea(double side1, double side2, double side3){
         double s;
         s = (side1 + side2 + side3)/2;
         double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
         return area;
-    }
+    }*/
 
     @Override
+    public String toString() {
+        return "Triangle has: " +
+                "base = " + width +
+                ", and height = " + height +
+                ". The area of the triangle is: " + getArea();
+    }
+
+    /*@Override
     public String toString() {
         return "Triangle{" +
                 "side1=" + side1 +
                 ", side2=" + side2 +
                 ", side3=" + side3 +
                 '}';
-    }
+    }*/
 }
