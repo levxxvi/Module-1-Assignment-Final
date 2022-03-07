@@ -10,8 +10,17 @@ public class Circle extends TwoDShape{
 
     @Override
     public String toString() {
-        return "Circle has: " +
-                "Pi = " + Pi +
-                ", and radius = " + radius;
+        return "Circle{" +
+                "Pi=" + Pi +
+                ", radius=" + radius +
+                '}';
     }
+
+    /*@Override
+    public String toString() {
+        return "Circle{" +
+                "Pi=" + Pi +
+                ", radius=" + radius +
+                '}';
+    }*/
 }
