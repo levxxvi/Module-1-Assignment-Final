@@ -25,10 +25,7 @@ public class Triangle extends TwoDShape {
 
     @Override
     public String toString() {
-        return "Triangle{" +
-                "side1=" + side1 +
-                ", side2=" + side2 +
-                ", side3=" + side3 +
-                '}';
+        return "Triangle has: height = " + heronsHeight() +
+                ", and base = " + side3;
     }
 }
