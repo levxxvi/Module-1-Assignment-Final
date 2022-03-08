@@ -1,6 +1,6 @@
-package com.lexwong.module1point2;
+package com.lexwong.module1point3;
 
-public class Circle extends TwoDShape{
+public class Circle extends TwoDShape {
     public final double Pi = 3.14159265;
     private double radius;
     Circle (double radius){
