@@ -4,8 +4,8 @@ public class TwoDShape {
     double width;
     double height;
     Colour colour;
-    public TwoDShape(double width, double height, Colour colour){}
-    public TwoDShape(){}
+    public TwoDShape(double width, double height){}
+    public TwoDShape(Colour colour){}
 
     public double getArea(){
         double area = width*height;

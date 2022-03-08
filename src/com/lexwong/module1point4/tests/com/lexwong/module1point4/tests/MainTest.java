@@ -1,5 +1,6 @@
 package com.lexwong.module1point4.tests;
 
+import com.lexwong.module1point4.Triangle;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -17,6 +18,8 @@ public class MainTest {
     }
     @Test public void test123zero(){
         //side1 = 0, side2 = 2, side3 = 2, s = 2
-        assertEquals(Math.sqrt(2*(2-0)*(2-2)*(2-2)), heronsHeight(0, 2, 2));
+        Triangle triangle = new Triangle(0, 2, 2);
+        assertEquals(0, triangle.heronsHeight(0, 2, 2));
     }
+
 }
