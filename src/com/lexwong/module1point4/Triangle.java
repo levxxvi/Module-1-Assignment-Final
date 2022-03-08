@@ -1,4 +1,4 @@
-package com.lexwong.module1point3;
+package com.lexwong.module1point4;
 
 public class Triangle extends TwoDShape {
     double side1;
@@ -19,7 +19,7 @@ public class Triangle extends TwoDShape {
 
         @Override
         public void rotate180() {
-
+            
         }
 
         @Override

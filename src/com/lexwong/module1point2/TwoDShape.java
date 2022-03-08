@@ -13,8 +13,6 @@ public class TwoDShape {
     }
     public void setHeight(double height){}
 
-
-
     //original
     /*public static void main(String[] args) {
         ArrayList<String> shapes = new ArrayList<String>();
