@@ -12,6 +12,7 @@ public class Triangle extends TwoDShape {
         this.height = height;
     }
     public Triangle(double side1, double side2, double side3){
+
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -36,7 +37,7 @@ public class Triangle extends TwoDShape {
      */
     public double heronsHeight(double side1, double side2, double side3){
         getArea(side1, side2, side3);
-        double h = getArea()*2/side3;
+        double h = getArea(side1, side2, side3)*2/side3;
         return h;
     }
 

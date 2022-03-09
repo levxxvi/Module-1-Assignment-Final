@@ -12,7 +12,6 @@ public class Main {
         for (TwoDShape s : shapes) {
             System.out.println(s);
         }
-        Triangle triangle = new Triangle(2, 2, 2);
-        System.out.println();
+
 }
 }
