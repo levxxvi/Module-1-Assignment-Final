@@ -12,6 +12,5 @@ public class Main {
         for (TwoDShape s : shapes) {
             System.out.println(s);
         }
-
-}
+    }
 }

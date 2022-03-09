@@ -12,11 +12,14 @@ public class Triangle extends TwoDShape {
         this.height = height;
     }
     public Triangle(double side1, double side2, double side3){
-
+        if (side1 <= 0 || side2 <= 0 || side3 <= 0){
+            side1 = 1;
+            side2 = 1;
+            side3 = 1;
+        }
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
-        heronsHeight(side1, side2, side3);
     }
 
     class RotateTriangle implements rotate {
@@ -35,8 +38,7 @@ public class Triangle extends TwoDShape {
      * find height when given the three sides of a triangle
      * @return the height of a triangle with three non-equal sides
      */
-    public double heronsHeight(double side1, double side2, double side3){
-        getArea(side1, side2, side3);
+    public double heronsHeight(){
         double h = getArea(side1, side2, side3)*2/side3;
         return h;
     }
@@ -53,7 +55,6 @@ public class Triangle extends TwoDShape {
         double num = width * height;
         double area = num / 2;
         return area;
-
     }
 
     @Override
