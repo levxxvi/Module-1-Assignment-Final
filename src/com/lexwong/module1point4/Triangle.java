@@ -6,7 +6,7 @@ public class Triangle extends TwoDShape {
     //base is side 3
     double side3;
 
-    public Triangle(double width, double height) {
+    public Triangle(double width, double height){
         super(width, height);
         this.width = width;
         this.height = height;
@@ -20,19 +20,13 @@ public class Triangle extends TwoDShape {
 
     class RotateTriangle implements rotate {
         @Override
-        public void rotate90() {
-
-        }
+        public void rotate90() {}
 
         @Override
-        public void rotate180() {
-            
-        }
+        public void rotate180() {}
 
         @Override
-        public void rotate(double degree) {
-
-        }
+        public void rotate(double degree) {}
     }
 
     /**
@@ -42,7 +36,7 @@ public class Triangle extends TwoDShape {
      */
     public double heronsHeight(double side1, double side2, double side3){
         getArea(side1, side2, side3);
-        double h = getArea()*2*side3;
+        double h = getArea()*2/side3;
         return h;
     }
 

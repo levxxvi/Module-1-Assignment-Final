@@ -5,7 +5,13 @@ public class TwoDShape {
     double height;
     Colour colour;
     public TwoDShape(double width, double height){}
-    public TwoDShape(Colour colour){}
+
+    public TwoDShape() {
+    }
+
+    public Colour TwoDShape(Colour colour){
+        return null;
+    }
 
     public double getArea(){
         double area = width*height;
