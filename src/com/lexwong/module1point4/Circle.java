@@ -1,8 +1,10 @@
 package com.lexwong.module1point4;
 
 public class Circle extends TwoDShape {
-    public final double Pi = 3.14159265;
+    public final double PI = 3.14159265;
     private double radius;
+    //since the radius of a circle cannot be less than zero (a negative number), any negative input
+    //will be changed to 1
     public Circle(double radius){
         if (radius < 0){
             radius = 1;
@@ -11,14 +13,14 @@ public class Circle extends TwoDShape {
     }
 
     public double getArea(){
-        double area = Pi*Math.pow(radius, 2);
+        double area = PI*Math.pow(radius, 2);
         return area;
     }
 
     @Override
     public String toString() {
         return "Circle has: " +
-                "Pi = " + Pi +
+                "Pi = " + PI +
                 ", and radius = " + radius +
                 ". The area is: " + getArea();
     }

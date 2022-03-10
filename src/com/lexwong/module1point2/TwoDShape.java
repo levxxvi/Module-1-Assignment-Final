@@ -12,12 +12,4 @@ public class TwoDShape {
         return area;
     }
     public void setHeight(double height){}
-
-    //original
-    /*public static void main(String[] args) {
-        ArrayList<String> shapes = new ArrayList<String>();
-        shapes.add(String.valueOf(new Triangle(1,1)));
-        shapes.add(String.valueOf(new Circle(1)));
-        System.out.println(shapes);
-    }*/
 }

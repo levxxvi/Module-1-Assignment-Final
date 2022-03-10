@@ -6,8 +6,7 @@ public class TwoDShape {
     Colour colour;
     public TwoDShape(double width, double height){}
 
-    public TwoDShape() {
-    }
+    public TwoDShape() {}
 
     public Colour TwoDShape(Colour colour){
         return null;

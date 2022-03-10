@@ -11,6 +11,8 @@ public class Triangle extends TwoDShape {
         this.width = width;
         this.height = height;
     }
+    //since a triangle cannot have a side with a width that is equal to or less than zero, any value
+    //equal or less to zero will be changed to 1
     public Triangle(double side1, double side2, double side3){
         if (side1 <= 0 || side2 <= 0 || side3 <= 0){
             side1 = 1;

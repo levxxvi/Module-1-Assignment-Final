@@ -11,14 +11,12 @@ public class Triangle extends TwoDShape{
     public Triangle(double side1, double side2,double side3){}
 
     private double heronsHeight(){
-        getArea();
-        double h = getArea()*2*side3;
+        double h = getArea(side1, side2, side3)*2/side3;
         return h;
     }
 
-    public double getArea(){
-        double s;
-        s = (side1 + side2 + side3)/2;
+    public double getArea(double side1, double side2, double side3){
+        double s = (side1+side2+side3)/2;
         double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
         return area;
     }

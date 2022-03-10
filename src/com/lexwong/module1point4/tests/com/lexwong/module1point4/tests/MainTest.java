@@ -26,7 +26,7 @@ public class MainTest {
         //side1 = 0, side2 = 2, side3 = 2, s = 2
         //will turn into side1 = 1, side2 = 1, side3 = 1, s = 1.5
         Triangle triangle = new Triangle(0, 2, 2);
-        assertEquals((Math.sqrt(1.5*(1.5-1)*(1.5-1)*(1.5-1)))*2/1, 
+        assertEquals((Math.sqrt(1.5*(1.5-1)*(1.5-1)*(1.5-1)))*2/1,
                 triangle.heronsHeight(), 0);
     }
 
