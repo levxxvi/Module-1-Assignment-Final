@@ -4,8 +4,6 @@ import com.lexwong.module1point4.Circle;
 import com.lexwong.module1point4.Triangle;
 import org.junit.Test;
 
-import java.nio.channels.Pipe;
-
 import static org.junit.Assert.*;
 
 public class MainTest {
@@ -26,8 +24,10 @@ public class MainTest {
 
     @Test public void test123zero(){
         //side1 = 0, side2 = 2, side3 = 2, s = 2
+        //will turn into side1 = 1, side2 = 1, side3 = 1, s = 1.5
         Triangle triangle = new Triangle(0, 2, 2);
-        assertEquals(0, triangle.heronsHeight(), 0);
+        assertEquals((Math.sqrt(1.5*(1.5-1)*(1.5-1)*(1.5-1)))*2/1, 
+                triangle.heronsHeight(), 0);
     }
 
     @Test public void test123neg(){
